@@ -119,7 +119,6 @@ h3 {
 }
 
 .search-container {
-  /*margin-right: auto;*/
   flex-grow: 1;
   background-image: url(assets/magnifying-glass.svg);
   background-repeat: no-repeat;
@@ -336,7 +335,7 @@ main {
 }
 
 #forwards {
-  border-color: #D9E3E9 #D9E3E9 #B364B2 #D9E3E9
+  border-color: #D9E3E9 #D9E3E9 #B364B2 #D9E3E9;
 }
 
 .circle-number {
@@ -681,8 +680,6 @@ h2 {
 @media screen and (max-width: 1050px) {
   .search-bar {
     padding: 30px 0;
-    /*flex-grow: 1;*/
-    /*width: 40%;*/
   }
   #facebook,
   #twitter,
@@ -734,11 +731,7 @@ h2 {
   .bottom-container {
     align-items: center;
   }
-
-
-
 }
-
 
 @media screen and (max-width: 990px) {
   .middle-header{
@@ -876,10 +869,9 @@ h2 {
   }
   .location{
     font-size: 12px;
-
   }
 p.location{
     background-position: 35px;
     background-size: 12px;
-}
+  }
 }
