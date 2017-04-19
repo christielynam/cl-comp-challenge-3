@@ -1,25 +1,207 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <meta charset="utf-8">
-  </head>
-  <body>
 
-    <header>
-      <input type="text" name="search" placeholder="Search for a job, task or resume">
-      <h1>Customer Serice Representative</h1>
-      <p>San Francisco , CA</p><p>Preview this post</p>
-      <nav>
-        <a href="#">Summary</a>
-        <a href="#">Applicants</a>
-        <a href="#">Job Board</a>
-        <a href="#">Interviews</a>
-        <a href="#">Activity</a>
-        <a href="#">Broadcast</a>
-        <a href="#">Notifications</a>
+<head>
+  <title>Static Comp 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+</head>
+
+<body>
+  <aside class="side-wrapper">
+    <nav class="side-nav">
+      <div class="top-side-nav">
+        <img class="profile-pic" src="assets/profile_picture.jpg" alt="profile pic">
+        <p class="profile-name">Newton Barley</p>
+      </div>
+      <div class="nav-main">
+        <h3>Main</h3>
+        <p>
+          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/home.svg" alt="home">home</a>
+        </p>
+        <p>
+          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/briefcase.svg" alt="briefcase">jobs</a>
+        </p>
+        <p>
+          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/resume.svg" alt="resume">resumes</a>
+        </p>
+        <p>
+          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/list.svg" alt="list">tasks</a>
+        </p>
+        <p>
+          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/calendar.svg" alt="calendar">calendar</a>
+        </p>
+      </div>
+      <div class="nav-admin">
+        <h3>Admin</h3>
+        <p>
+          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/users.svg" alt="users">users</a>
+        </p>
+        <p>
+          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/facebook-placeholder-for-locate-places-on-maps.svg" alt="location">locations</a>
+        </p>
+        <p>
+          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/network.svg" alt="workflow">workflows</a>
+        </p>
+        <p>
+          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/newspaper.svg" alt="job board">job boards</a>
+        </p>
+        <p>
+          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/share (1).svg" alt="share">social</a>
+        </p>
+      </div>
+      <div class="nav-categories">
+        <h3>Categories</h3>
+        <p class="checkbox-text"><img class="side-nav-icon" id="administrative" src="assets/checked.svg" alt="yellow checkbox">Administrative</p>
+        <p class="checkbox-text"><img class="side-nav-icon" id="design" src="assets/blue-square.svg" alt="blue checkbox">Design</p>
+        <p class="checkbox-text"><img class="side-nav-icon" id="executive" src="assets/red-square.svg" alt="red checkbox">Executive</p>
+        <p class="checkbox-text"><img class="side-nav-icon" id="hr" src="assets/green-square.svg" alt="green checkbox">Human Resources</p>
+      </div>
+    </nav>
+  </aside>
+  <div class="main-wrapper">
+    <header role="banner" class="header-container">
+      <section class="top-bar">
+        <div class="left-icon-container">
+          <button class="icon-btn" id="menu"></button>
+        </div>
+        <div class="search-container">
+          <input role="search" class="search-bar" type="text" name="search" placeholder="Search for a job, task or resume" />
+        </div>
+        <div class="right-icon-container">
+          <button class="icon-btn" id="user"></button>
+          <button class="icon-btn" id="calendar"></button>
+          <button class="icon-btn" id="dots"></button>
+          <button class="icon-btn" id="expand"></button>
+        </div>
+      </section>
+      <section class="middle-header">
+        <div class="title-container">
+          <h1 class="title">Customer Service Representative</h1>
+          <p class="location">San Francisco, CA &middot;<a class="preview" href="#">Preview this post</a></p>
+        </div>
+        <div class="btn-container">
+          <button class="open" type="button" name="open">Open</button>
+          <button class="ribbon" type="button" name="ribbon"></button>
+          <button class="edit" type="button" name="edit"></button>
+          <button class="delete" type="button" name="delete"></button>
+        </div>
+      </section>
+      <nav class="header-nav">
+        <a class="nav-link" id="summary" href="#">Summary</a>
+        <a class="nav-link" id="applicants" href="#">Applicants</a>
+        <a class="nav-link" id="job-board" href="#">Job Board</a>
+        <a class="nav-link" id="interviews" href="#">Interviews</a>
+        <a class="nav-link" id="activity" href="#">Activity</a>
+        <a class="nav-link" id="broadcast" href="#">Broadcast</a>
+        <a class="nav-link" id="notifications" href="#">Notifications</a>
+        <a class="nav-link" id="more" href="#">More...</a>
       </nav>
     </header>
+    <main role="main">
+      <section class="graph-container">
+        <div class="circle-chart-container">
+          <div class="circle-chart" id="applicants">
+            <p class="circle-number">3,154</p>
+            <p class="circle-text">applicants</p>
+          </div>
+          <div class="circle-chart" id="interviews">
+            <p class="circle-number">1,546</p>
+            <p class="circle-text">interviews</p>
+          </div>
+          <div class="circle-chart" id="forwards">
+            <p class="circle-number">912</p>
+            <p class="circle-text">forwards</p>
+          </div>
+          <button class="circle-btn"><span>totals</span> - out of 5,231 views</button>
+        </div>
+        <div class="bar-chart-container">
+          <img id="bar-chart" src="assets/bar-chart (1).png" alt="bar chart">
+          <button class="chart-btn">applicants/day</button>
+        </div>
+      </section>
+      <div class="line-break">
+        <hr>
+        <button class="up-arrow" type="button" name="up-arrow"></button>
+        <hr>
+      </div>
+      <section class="bottom-container">
+        <section class="table-container">
+          <table>
+            <thead>
+              <tr class="top-row">
+                <td colspan="2" class="row-title">job description <button class="table-btn">Edit</button></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="row-title">position title</td>
+                <td>Customer Service Representative</td>
+              </tr>
+              <tr>
+                <td class="row-title">employment type</td>
+                <td>Full-time</td>
+              </tr>
+              <tr>
+                <td class="row-title">experience</td>
+                <td>Mid-level</td>
+              </tr>
+              <tr>
+                <td class="row-title">status</td>
+                <td>Open</td>
+              </tr>
+              <tr>
+                <td class="row-title">description</td>
+                <td class="description">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, reaoonsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service
+                  wait times while doing a backhand spring and eating a ham sandwich. </td>
+              </tr>
+              <tr>
+                <td class="row-title">hiring lead</td>
+                <td id="tizzy"><img class="table-photo" src="assets/picture_2405201614728.jpg" alt="profile pic">Tom Tizzy</td>
+              </tr>
+              <tr class="bottom-row">
+                <td class="row-title">approved salary</td>
+                <td class="salary">$58,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="aside-footer">
+          <div class="social-media-container">
+            <a class="social-media-links" id="facebook" href="#"><img class="facebook" src="assets/facebook-logo.svg" alt="connect to facebook">Post to Facebook</a>
+            <a class="social-media-links" id="twitter" href="#"><img class="twitter" src="assets/twitter-logo-silhouette.svg" alt="connect to twitter">Tweet this Job</a>
+            <a class="social-media-links" id="linkedin" href="#"><img class="linkedin" src="assets/linkedin-logo.svg" alt="connect to linkedin">Post to Linkedin</a>
+          </div>
+          <div class="connect-container">
+            <article class="job-link">
+              <h2><img class="footer-icon" src="assets/earth.svg" alt="world icon">Link to this Job</h2>
+              <p class="connect-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non feugiat sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <div class="input-container">
+                <input class="link-container" type="text" name="job link" value="http://loremipsum.dol/sit.amet..." />
+                <button class="copy">Copy</button>
+              </div>
+            </article>
+            <article class="button-widget">
+              <h2><img class="footer-icon" src="assets/settings-button.svg" alt="widget">Use the Button Widget</h2>
+              <p class="connect-text">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+              <div class="input-container">
+                <input class="link-container" type="text" name="button widget" value="<script type='text/javascript'" />
+                <button class="copy">Copy</button>
+              </div>
+            </article>
+            <article class="upload-resume">
+              <h2><img class="footer-icon" src="assets/sent-mail.svg" alt="sent mail icon">Upload Resumes by Email</h2>
+              <p class="connect-text">You can automatically upload multiple resumes to this job by emailing the address below.</p>
+              <input class="link-container" id="email" type="email" name="email" value="tomtizzy@gmail.com" />
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
 
-  </body>
 </html>
