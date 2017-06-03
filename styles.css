@@ -12,6 +12,7 @@ body {
 }
 
 .side-wrapper {
+  min-height: 100vh;
   width: 175px;
   min-width: 175px;
   background-color: #354052;
@@ -65,44 +66,83 @@ ul {
   cursor: pointer;
 }
 
-#home {
+#aside-home {
   background-image: url('assets/home.svg');
 }
 
-#jobs {
+#aside-home:hover {
+  background-image: url('assets/icon.svg');
+}
+
+#aside-jobs {
   background-image: url('assets/briefcase.svg');
 }
 
-#resume {
-  background-image: url('assets/resume.svg');
+#aside-jobs:hover {
+  background-image: url('assets/briefcase (1).svg');
 }
 
-#tasks {
+#aside-resume {
+  background-image: url('assets/resume.svg');
+}
+#aside-resume:hover {
+  background-image: url('assets/resume (1).svg');
+}
+
+#aside-tasks {
   background-image: url('assets/list.svg');
+}
+
+#aside-tasks:hover {
+  background-image: url('assets/list (1).svg');
 }
 
 #aside-calendar {
   background-image: url('assets/calendar.svg');
 }
 
+#aside-calendar:hover {
+  background-image: url('assets/calendar (1).svg');
+}
+
 #aside-users {
   background-image: url('assets/users.svg');
+}
+
+#aside-users:hover {
+  background-image: url('assets/users (1).svg');
 }
 
 #aside-locations {
   background-image: url('assets/facebook-placeholder-for-locate-places-on-maps.svg');
 }
 
+#aside-locations:hover {
+  background-image: url('assets/placeholder (1).svg');
+}
+
 #aside-workflows {
   background-image: url('assets/network.svg');
+}
+
+#aside-workflows:hover {
+  background-image: url('assets/network (1).svg');
 }
 
 #aside-job-boards {
   background-image: url('assets/newspaper.svg');
 }
 
+#aside-job-boards:hover {
+  background-image: url('assets/newspaper (1).svg');
+}
+
 #aside-social {
   background-image: url('assets/share (1).svg');
+}
+
+#aside-social:hover {
+  background-image: url('assets/share-symbol.svg');
 }
 
 #administrative,
@@ -129,10 +169,12 @@ ul {
 }
 
 .main-wrapper {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 
-.top-bar {
+.top-nav {
   height: 80px;
   display: flex;
   align-items: center;
@@ -155,14 +197,14 @@ ul {
   background-repeat: no-repeat;
 }
 
-#menu {
+#menu-btn {
   background-image: url(assets/menu.svg);
-  background-color: inherit;
+  /*background-color: inherit;*/
   background-position: 50%;
   background-size: cover;
 }
 
-#menu:hover {
+#menu-btn:hover {
   background-color: #16A0F5;
   cursor: pointer;
 }
@@ -243,7 +285,7 @@ ul {
 }
 
 .location {
-  padding: 0 50px;
+  padding: 0 45px;
   background-image: url(assets/location-fill.svg);
   background-color: inherit;
   background-repeat: no-repeat;
@@ -326,7 +368,7 @@ header p {
   background-size: 15px;
 }
 
-.header-nav {
+.lower-nav {
   padding-bottom: 25px;
 }
 
@@ -790,7 +832,7 @@ h2 {
   }
   p.location {
     text-align: center;
-    background-position: 105px;
+    background-position: 130px;
     margin: 5px 0;
   }
   .title{

@@ -19,10 +19,10 @@
       </div>
       <ul class="nav-main">
         <h3 class="aside-header">Main</h3>
-        <li><a class="side-link side-nav-icon" id="home">home</a></li>
-        <li><a class="side-link side-nav-icon" id="jobs" href="#">jobs</a></li>
-        <li><a class="side-link side-nav-icon" id="resume" href="#">resumes</a></li>
-        <li><a class="side-link side-nav-icon" id="tasks" href="#">tasks</a></li>
+        <li><a class="side-link side-nav-icon" id="aside-home">home</a></li>
+        <li><a class="side-link side-nav-icon" id="aside-jobs" href="#">jobs</a></li>
+        <li><a class="side-link side-nav-icon" id="aside-resume" href="#">resumes</a></li>
+        <li><a class="side-link side-nav-icon" id="aside-tasks" href="#">tasks</a></li>
         <li><a class="side-link side-nav-icon" id="aside-calendar" href="#">calendar</a></li>
       </ul>
       <ul class="nav-admin">
@@ -42,11 +42,11 @@
       </div>
     </nav>
   </aside>
-  <div class="main-wrapper">
+  <section class="main-wrapper">
     <header role="banner" class="header-container">
-      <section class="top-bar">
+      <nav class="top-nav">
         <div class="left-icon-container">
-          <button class="icon-btn" id="menu"></button>
+          <button class="icon-btn" id="menu-btn"></button>
         </div>
         <div class="search-container">
           <input role="search" class="search-bar" type="text" name="search" placeholder="Search" />
@@ -56,12 +56,11 @@
           <button class="icon-btn" id="calendar"></button>
           <button class="icon-btn" id="dots"></button>
           <button class="icon-btn" id="expand"></button>
-        </div>
-      </section>
+        </nav>
       <section class="middle-header">
         <div class="title-container">
           <h1 class="title">Customer Service Representative</h1>
-          <p class="location">San Francisco, CA &middot;<a class="preview" href="#">Preview this post</a></p>
+          <p class="location">Denver, CO &middot;<a class="preview" href="#">Preview this post</a></p>
         </div>
         <div class="btn-container">
           <button class="open" type="button" name="open">Open</button>
@@ -70,7 +69,7 @@
           <button class="delete" type="button" name="delete"></button>
         </div>
       </section>
-      <nav class="header-nav">
+      <nav class="lower-nav">
         <a class="nav-link" id="summary" href="#">Summary</a>
         <a class="nav-link" id="applicants-link" href="#">Applicants</a>
         <a class="nav-link" id="job-board" href="#">Job Board</a>
@@ -181,7 +180,6 @@
         </section>
       </section>
     </main>
-  </div>
+  </section>
 </body>
-
 </html>
