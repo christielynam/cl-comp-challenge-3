@@ -5,9 +5,9 @@
   <title>Static Comp 3</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 </head>
 
 <body>
@@ -17,48 +17,28 @@
         <img class="profile-pic" src="assets/Jim.jpg" alt="profile pic">
         <p class="profile-name">Jim Halpert</p>
       </div>
-      <div class="nav-main">
-        <h3>Main</h3>
-        <p>
-          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/home.svg" alt="home">home</a>
-        </p>
-        <p>
-          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/briefcase.svg" alt="briefcase">jobs</a>
-        </p>
-        <p>
-          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/resume.svg" alt="resume">resumes</a>
-        </p>
-        <p>
-          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/list.svg" alt="list">tasks</a>
-        </p>
-        <p>
-          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/calendar.svg" alt="calendar">calendar</a>
-        </p>
-      </div>
-      <div class="nav-admin">
-        <h3>Admin</h3>
-        <p>
-          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/users.svg" alt="users">users</a>
-        </p>
-        <p>
-          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/facebook-placeholder-for-locate-places-on-maps.svg" alt="location">locations</a>
-        </p>
-        <p>
-          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/network.svg" alt="workflow">workflows</a>
-        </p>
-        <p>
-          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/newspaper.svg" alt="job board">job boards</a>
-        </p>
-        <p>
-          <a class="side-link" href="#"><img class="side-nav-icon" src="assets/share (1).svg" alt="share">social</a>
-        </p>
-      </div>
+      <ul class="nav-main">
+        <h3 class="aside-header">Main</h3>
+        <li><a class="side-link side-nav-icon" id="home">home</a></li>
+        <li><a class="side-link side-nav-icon" id="jobs" href="#">jobs</a></li>
+        <li><a class="side-link side-nav-icon" id="resume" href="#">resumes</a></li>
+        <li><a class="side-link side-nav-icon" id="tasks" href="#">tasks</a></li>
+        <li><a class="side-link side-nav-icon" id="aside-calendar" href="#">calendar</a></li>
+      </ul>
+      <ul class="nav-admin">
+        <h3 class="aside-header">Admin</h3>
+        <li><a class="side-link side-nav-icon" id="aside-users" href="#">users</a></li>
+        <li><a class="side-link side-nav-icon" id="aside-locations" href="#">locations</a></li>
+        <li><a class="side-link side-nav-icon" id="aside-workflows" href="#">workflows</a></li>
+        <li><a class="side-link side-nav-icon" id="aside-job-boards" href="#">job boards</a></li>
+        <li><a class="side-link side-nav-icon" id="aside-social" href="#">social</a></li>
+      </ul>
       <div class="nav-categories">
-        <h3>Categories</h3>
-        <p class="checkbox-text"><img class="side-nav-icon" id="administrative" src="assets/checked.svg" alt="yellow checkbox">Administrative</p>
-        <p class="checkbox-text"><img class="side-nav-icon" id="design" src="assets/blue-square.svg" alt="blue checkbox">Design</p>
-        <p class="checkbox-text"><img class="side-nav-icon" id="executive" src="assets/red-square.svg" alt="red checkbox">Executive</p>
-        <p class="checkbox-text"><img class="side-nav-icon" id="hr" src="assets/green-square.svg" alt="green checkbox">Human Resources</p>
+        <h3 class="aside-header">Categories</h3>
+        <p class="checkbox-text"><img id="administrative" src="assets/checked.svg" alt="yellow checkbox">Administrative</p>
+        <p class="checkbox-text"><img id="design" src="assets/blue-square.svg" alt="blue checkbox">Design</p>
+        <p class="checkbox-text"><img id="executive" src="assets/red-square.svg" alt="red checkbox">Executive</p>
+        <p class="checkbox-text"><img id="hr" src="assets/green-square.svg" alt="green checkbox">Human Resources</p>
       </div>
     </nav>
   </aside>
@@ -177,7 +157,7 @@
           </div>
           <div class="connect-container">
             <article class="job-link">
-              <h2><img class="footer-icon" src="assets/earth.svg" alt="world icon">Link to this Job</h2>
+              <h2 id="link-to-job"><img class="footer-icon" src="assets/earth.svg" alt="world icon">Link to this Job</h2>
               <p class="connect-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non feugiat sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
               <div class="input-container">
                 <input class="link-container" type="text" name="job link" value="http://loremipsum.dol/sit.amet..." />
