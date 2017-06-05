@@ -350,7 +350,7 @@ header p {
   padding: 15px;
   border: 2px solid #DEE3E9;
   border-radius: 100%;
-  background-image: url(assets/pencil-edit-button.svg);
+  background-image: url('assets/pencil-edit-button (3).svg');
   background-color: inherit;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -486,7 +486,7 @@ span {
   padding: 15px;
   border: 2px solid #DEE3E9;
   border-radius: 100px;
-  background-image: url(assets/up-arrow.svg);
+  background-image: url('assets/up-arrow.svg');
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -495,6 +495,8 @@ span {
 
 hr {
   width: 45%;
+  border-top: 1px solid #DEE3E9;
+  border-bottom: 1px solid #DEE3E9;
 }
 
 .bottom-container {
@@ -528,7 +530,7 @@ thead {
   padding-left: 30px;
   border: none;
   background-color: #7B8BA5;
-  background-image: url(assets/pencil-edit-button.svg);
+  background-image: url('assets/pencil-edit-button (2).svg');
   background-repeat: no-repeat;
   background-position: 10px;
   background-size: 20px;
@@ -581,7 +583,7 @@ td {
   border: none;
 }
 
-.aside-footer {
+.aside-right {
   display: flex;
   flex-direction: column;
   padding: 25px 25px 0 0;
@@ -598,31 +600,30 @@ td {
 #facebook,
 #twitter,
 #linkedin {
-  width: 350px;
-  display: flex;
+  width: 100%;
   padding: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 10%;
+  background-position-y: 50%;
+  background-size: 25px;
   color: #FFFFFF;
+  text-align: center;
   text-decoration: none;
 }
 
-.facebook,
-.twitter,
-.linkedin {
-  width: 20px;
-  height: 20px;
-  margin-right: 70px;
-}
-
 #facebook {
-  background-color: #4B6EC1
+  background-color: #4B6EC1;
+  background-image: url('assets/facebook-logo.svg');
 }
 
 #twitter {
   background-color: #01AAEF;
+  background-image: url('assets/twitter-logo-silhouette.svg');
 }
 
 #linkedin {
   background-color: #037FBD;
+  background-image: url('assets/linkedin-logo.svg');
 }
 
 .connect-container {
@@ -634,12 +635,11 @@ td {
 .job-link,
 .button-widget,
 .upload-resume {
-  width: 350px;
   padding-bottom: 50px;
   border-bottom: 2px solid #D9E3E9;
 }
 
-.footer-icon {
+.connect-icon {
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -728,25 +728,25 @@ h2 {
   .bottom-container {
     flex-direction: column;
   }
-  .aside-footer {
+  .aside-right {
     flex-direction: column;
     padding: 25px;
   }
   .social-media-container {
     height: 250px;
-    flex-direction: column;;
+      /*flex-direction: column;;*/
     justify-content: space-around;
   }
   #facebook,
   #twitter,
   #linkedin {
-    width: 800px;
+    width: 100%;
     align-items: center;
   }
   .job-link,
   .button-widget,
   .upload-resume {
-    width:85%;
+    width:100%;
     padding-bottom: 30px;
   }
   h2 {
@@ -775,13 +775,18 @@ h2 {
   #facebook,
   #twitter,
   #linkedin {
-    width: 600px;
+    width: 90%;
     align-items: center;
   }
   .facebook,
   .twitter,
   .linkedin {
     margin: 0 150px 0 50px;
+  }
+  .job-link,
+  .button-widget,
+  .upload-resume {
+    width: 90%;
   }
   #notifications {
     display: none;
@@ -791,6 +796,9 @@ h2 {
   }
   .circle-chart-container {
     justify-content: center;
+  }
+  .bottom-container {
+    align-items: center;
   }
   .table-container {
     width: 90%;
@@ -818,9 +826,6 @@ h2 {
   }
   .salary {
     margin-bottom: 20px;
-  }
-  .bottom-container {
-    align-items: center;
   }
 }
 
@@ -869,9 +874,6 @@ h2 {
   #activity{
     display: none;
   }
-  #facebook,#twitter,#linkedin{
-    width: 400px;
-  }
   .facebook,
   .twitter,
   .linkedin {
@@ -899,22 +901,33 @@ h2 {
     display: inline;
 
   }
-  #dots, #user, #calendar{
+  #dots,
+  #user,
+  #calendar {
     display: none;
   }
 }
 
 @media screen and (max-width: 550px){
-  .aside-footer, .table-container{
+  .nav-link {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  .aside-right,
+  .table-container{
     padding: 5px;
   }
   td{
     font-size: 16px;
   }
   .table-btn {
-    margin: 0;
+    width: 90px;
+    height: 35px;
+    margin: 0 5px;
+    background-size: 17px;
+    font-size: 18px;
   }
-  a#interviews{
+  a #interviews{
     display: none;
   }
   .circle-chart-container{
@@ -931,13 +944,14 @@ h2 {
     font-size: 26px;
   }
   p.location{
-    background-position: 60px;
+    background-position: 85px ;
   }
   #bar-chart{
     width: 315px;
     height: 180px;
   }
-  .circle-btn, .chart-btn {
+  .circle-btn,
+  .chart-btn {
     margin: 10px 20px;
   }
 }
@@ -945,13 +959,14 @@ h2 {
   #job-board{
     display: none;
   }
-  #facebook, #twitter, #linkedin{
-    width: 300px;
+  td {
+    padding: 20px 10px;
+    text-align: center;
   }
   .facebook,
   .twitter,
   .linkedin {
-    margin: 0 50px 0 25px;
+    margin: 0 20px 0 25px;
   }
   .title{
     font-size: 20px;
@@ -962,7 +977,7 @@ h2 {
     font-size: 12px;
   }
 p.location{
-    background-position: 35px;
+    background-position: 55px;
     background-size: 12px;
   }
 }
