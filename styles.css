@@ -145,14 +145,6 @@ ul {
   background-image: url('assets/share-symbol.svg');
 }
 
-#administrative,
-#design,
-#executive,
-#hr {
-  width: 15px;
-  margin: 0 10px;
-}
-
 .side-link {
   display: flex;
   align-items: center;
@@ -162,10 +154,51 @@ ul {
   text-transform: uppercase;
 }
 
-.checkbox-text {
+.aside-category {
   display: flex;
   align-items: center;
+}
+
+.checkbox {
+	-webkit-appearance: none;
+  margin: 10px;
+	padding: 8px;
+	border-radius: 1px;
+	display: block;
+	position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+#yellow-box {
+  background-color: #FBE303;
+}
+
+#blue-box {
+  background-color: #2AB0FB;
+}
+
+#red-box {
+  background-color: #EC1B62;
+}
+
+#green-box {
+  background-color: #00AA88;
+}
+
+.checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 2px;
+	color: #000000;
+  outline: none;
+}
+
+.checkbox-label {
   color: #939EB0;
+  font-size: 14px;
 }
 
 .main-wrapper {
@@ -482,7 +515,7 @@ span {
   align-items: center;
 }
 
-.up-arrow{
+.collapse-btn{
   padding: 15px;
   border: 2px solid #DEE3E9;
   border-radius: 100px;
@@ -491,12 +524,14 @@ span {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 15px;
+  cursor: pointer;
 }
 
 hr {
   width: 45%;
   border-top: 1px solid #DEE3E9;
   border-bottom: 1px solid #DEE3E9;
+
 }
 
 .bottom-container {
@@ -910,8 +945,11 @@ h2 {
 
 @media screen and (max-width: 550px){
   .nav-link {
-    margin-left: 20px;
-    font-size: 14px;
+    /*margin-left: 20px;*/
+    /*font-size: 14px;*/
+  }
+  #interviews {
+    display: none;
   }
   .aside-right,
   .table-container{
