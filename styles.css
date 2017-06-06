@@ -933,7 +933,7 @@ h2 {
 }
 
 @media screen and (max-width: 550px){
-  #interviews {
+  #nav-interviews {
     display: none;
   }
   .aside-right,
@@ -950,7 +950,7 @@ h2 {
     background-size: 17px;
     font-size: 18px;
   }
-  a #interviews{
+  #nav-interviews {
     display: none;
   }
   .circle-chart-container{
