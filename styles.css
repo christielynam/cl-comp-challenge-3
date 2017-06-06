@@ -831,6 +831,9 @@ h2 {
     padding-bottom: 10px;
     text-align: center;
   }
+  .description {
+    text-align: center;
+  }
   #michael-scott {
     flex-direction: column;
     padding-top: 0;
@@ -984,7 +987,7 @@ h2 {
   }
   td {
     padding: 20px 10px;
-    text-align: center;
+    /*text-align: center;*/
   }
   .facebook,
   .twitter,
