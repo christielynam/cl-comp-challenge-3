@@ -80,6 +80,7 @@ ul {
 #aside-resume {
   background-image: url('assets/resume.svg');
 }
+
 #aside-resume:hover {
   background-image: url('assets/resume (1).svg');
 }
@@ -150,17 +151,17 @@ ul {
 }
 
 .aside-category {
-  margin-top: 15px;
   display: flex;
   align-items: center;
+  margin-top: 15px;
 }
 
 .checkbox {
 	-webkit-appearance: none;
   display: block;
+  position: relative;
   margin: 10px;
 	padding: 8px;
-  position: relative;
 	border-radius: 1px;
   cursor: pointer;
   outline: none;
@@ -250,9 +251,9 @@ ul {
   margin-left: 50px;
   padding: 30px 0;
   border: 0 solid;
-  outline: none;
   color: #6C6D72;
   font-size: 16px;
+  outline: none;
 }
 
 ::placeholder {
@@ -319,8 +320,8 @@ ul {
 .location {
   padding: 0 45px;
   background-image: url('assets/location-fill.svg');
-  background-repeat: no-repeat;
   background-position: 25px;
+  background-repeat: no-repeat;
   background-size: 15px;
 }
 
@@ -351,8 +352,8 @@ header p {
   border-radius: 17px;
   background-image: url(assets/circle.svg);
   background-color: inherit;
-  background-repeat: no-repeat;
   background-position: 10px;
+  background-repeat: no-repeat;
   background-size: 10px;
   color: #6C6D72;
   cursor: pointer;
@@ -368,14 +369,14 @@ header p {
   border: 2px solid #DEE3E9;
   border-radius: 100%;
   background-color: inherit;
-  background-repeat: no-repeat;
   background-position: 50%;
+  background-repeat: no-repeat;
   background-size: 15px;
   cursor: pointer;
 }
 
 .ribbon {
-  background-image: url(assets/bookmark-ribbon.svg);
+  background-image: url('assets/bookmark-ribbon.svg');
 }
 
 .edit {
@@ -383,7 +384,7 @@ header p {
 }
 
 .delete {
-  background-image: url(assets/delete.svg);
+  background-image: url('assets/delete.svg');
 }
 
 .lower-nav {
@@ -426,8 +427,8 @@ main {
 }
 
 .circle-chart {
-  width: 175px;
   height: 175px;
+  width: 175px;
   display: inline-block;
   margin: 10px;
   border: 10px solid grey;
@@ -491,7 +492,7 @@ main {
   font-weight: bold;
 }
 
-span {
+.to-uppercase {
   text-transform: uppercase;
 }
 
@@ -506,8 +507,8 @@ span {
   border-radius: 100px;
   background-image: url('assets/up-arrow.svg');
   background-color: #FFFFFF;
-  background-repeat: no-repeat;
   background-position: 50%;
+  background-repeat: no-repeat;
   background-size: 15px;
   cursor: pointer;
 }
@@ -544,15 +545,15 @@ thead {
 }
 
 .table-btn {
-  width: 100px;
   height: 40px;
+  width: 100px;
   margin-left: 30px;
   padding-left: 30px;
   border: none;
   background-color: #7B8BA5;
   background-image: url('assets/pencil-edit-button (2).svg');
-  background-repeat: no-repeat;
   background-position: 10px;
+  background-repeat: no-repeat;
   background-size: 20px;
   color: #FFFFFF;
   cursor: pointer;
@@ -583,8 +584,8 @@ td {
 }
 
 .table-photo {
-  width: 75px;
   height: 75px;
+  width: 75px;
   margin-right: 20px;
   border-radius: 100%;
 }
@@ -622,9 +623,9 @@ td {
 #linkedin {
   width: 100%;
   padding: 20px;
-  background-repeat: no-repeat;
   background-position-x: 10%;
   background-position-y: 50%;
+  background-repeat: no-repeat;
   background-size: 25px;
   color: #FFFFFF;
   text-align: center;
@@ -677,8 +678,8 @@ h2 {
 }
 
 .link-container {
-  width: 250px;
   height: 50px;
+  width: 250px;
   padding: 5px 10px;
   border: 1px solid #D9E3E9;
   border-radius: 3%;
@@ -688,14 +689,14 @@ h2 {
 }
 
 #email {
-  width: 350px;
   height: 50px;
+  width: 350px;
   margin-bottom: 20px;
 }
 
 .copy {
-  width: 100px;
   height: 50px;
+  width: 100px;
   border-radius: 3%;
   border-style: none;
   background-color: #42BBBD;
@@ -729,8 +730,8 @@ h2 {
     justify-content: space-around;
   }
   .circle-chart {
-    width: 200px;
     height: 200px;
+    width: 200px;
   }
   .circle-btn {
     margin: 0 50px;
@@ -859,9 +860,9 @@ h2 {
     align-items: center;
   }
   p.location {
-    text-align: center;
     background-position: 130px;
     margin: 5px 0;
+    text-align: center;
   }
   .title{
     margin: 0;
@@ -870,8 +871,8 @@ h2 {
     display: none;
   }
   #bar-chart{
-    width: 440px;
     height: 220px;
+    width: 440px;
   }
   .circle-chart{
     height: 150px;
@@ -888,8 +889,8 @@ h2 {
     height: auto;
   }
   .graph-container{
-    padding: 0;
     height: 650px;
+    padding: 0;
   }
 }
 
@@ -948,8 +949,8 @@ h2 {
     font-size: 16px;
   }
   .table-btn {
-    width: 90px;
     height: 35px;
+    width: 90px;
     margin: 0 5px;
     background-size: 17px;
     font-size: 18px;
@@ -958,24 +959,24 @@ h2 {
     display: none;
   }
   .circle-chart-container{
+    height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
     margin: 10px 0;
   }
   .graph-container{
     height: auto;
   }
   .title{
-    font-size: 26px;
+    font-size: 25px;
   }
   p.location{
     background-position: 85px ;
   }
   #bar-chart{
-    width: 315px;
     height: 180px;
+    width: 315px;
   }
   .circle-btn,
   .chart-btn {
@@ -988,7 +989,6 @@ h2 {
   }
   td {
     padding: 20px 10px;
-    /*text-align: center;*/
   }
   .facebook,
   .twitter,
