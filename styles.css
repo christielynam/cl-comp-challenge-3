@@ -150,6 +150,7 @@ ul {
 }
 
 .aside-category {
+  margin-top: 15px;
   display: flex;
   align-items: center;
 }
