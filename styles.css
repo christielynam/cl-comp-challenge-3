@@ -228,7 +228,7 @@ ul {
 }
 
 #menu-btn {
-  background-image: url(assets/menu.svg);
+  background-image: url('assets/menu.svg');
   background-position: 50%;
   background-size: cover;
 }
@@ -240,7 +240,7 @@ ul {
 
 .search-container {
   flex-grow: 1;
-  background-image: url(assets/magnifying-glass.svg);
+  background-image: url('assets/magnifying-glass.svg');
   background-repeat: no-repeat;
   background-position: 20px;
   background-size: 30px;
@@ -350,7 +350,7 @@ header p {
   padding-left: 20px;
   border: 2px solid #DEE3E9;
   border-radius: 17px;
-  background-image: url(assets/circle.svg);
+  background-image: url('assets/circle.svg');
   background-color: inherit;
   background-position: 10px;
   background-repeat: no-repeat;
